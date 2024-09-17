@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma de Números</title>
+</head>
+<body>
+    <script>
+        var numeros = [];
+        var total = 0;
+
+        for (var linha = 0; linha < 3; linha++) {
+            numeros[linha] = [];
+            for (var coluna = 0; coluna < 3; coluna++) {
+                var numero = parseInt(prompt("Digite um número:"));
+                numeros[linha][coluna] = numero;
+                total += numero;
+            }
+        }
+
+        document.write("Os números são: <br>");
+        for (var linha = 0; linha < 3; linha++) {
+            for (var coluna = 0; coluna < 3; coluna++) {
+                document.write(numeros[linha][coluna] + " ");
+            }
+            document.write("<br>");
+        }
+
+        document.write("A soma dos números é: " + total);
+    </script>
+</body>
+</html>
+

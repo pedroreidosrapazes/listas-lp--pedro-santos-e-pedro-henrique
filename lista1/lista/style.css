@@ -1,0 +1,35 @@
+*{
+    align-items: center;
+}
+#caixa{
+    
+    border-color:rgb(255, 160, 160);
+    width: 150px;
+    height: 150px;
+    background-color: rgb(255, 160, 160);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+    text-align: center;
+}
+#caixa2{
+    border-color: rgb(255, 160, 160);
+    width: 150px;
+    height: 150px;
+    background-color: rgb(255, 160, 160);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

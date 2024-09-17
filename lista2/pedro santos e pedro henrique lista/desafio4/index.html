@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Valores</title>
+</head>
+<body>
+    <script>
+        var valores = [];
+
+        for (var linha = 0; linha < 3; linha++) {
+            valores[linha] = [];
+            for (var coluna = 0; coluna < 3; coluna++) {
+                var valor = prompt("Digite um valor (número ou texto):");
+                valores[linha][coluna] = valor;
+            }
+        }
+
+        document.write("Os valores digitados são:<br>");
+        for (var linha = 0; linha < 3; linha++) {
+            for (var coluna = 0; coluna < 3; coluna++) {
+                var valor = valores[linha][coluna];
+                document.write(valor + " (tipo: " + typeof valor + ")<br>");
+            }
+        }
+    </script>
+</body>
+</html>

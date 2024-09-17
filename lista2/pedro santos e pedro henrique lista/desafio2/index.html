@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplicar Números</title>
+</head>
+<body>
+    <script>
+        var numeros = [];
+        var multiplicador = parseInt(prompt("Digite o multiplicador:"));
+
+        for (var linha = 0; linha < 3; linha++) {
+            numeros[linha] = [];
+            for (var coluna = 0; coluna < 3; coluna++) {
+                var numero = parseInt(prompt("Digite um número:"));
+                numeros[linha][coluna] = numero;
+            }
+        }
+
+        var resultado = [];
+        for (var linha = 0; linha < 3; linha++) {
+            resultado[linha] = [];
+            for (var coluna = 0; coluna < 3; coluna++) {
+                resultado[linha][coluna] = numeros[linha][coluna] * multiplicador;
+            }
+        }
+
+        document.write("Os números multiplicados são:<br>");
+        for (var linha = 0; linha < 3; linha++) {
+            for (var coluna = 0; coluna < 3; coluna++) {
+                document.write(resultado[linha][coluna] + " ");
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>
